@@ -1,4 +1,4 @@
-<?php namespace Biroa\Jobs;
+<?php namespace Adbiro\Biroa\Jobs;
 /**
  * Created by PhpStorm.
  * User: biroa

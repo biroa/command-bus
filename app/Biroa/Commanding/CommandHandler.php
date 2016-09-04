@@ -1,4 +1,4 @@
-<?php namespace Biroa\Commanding;
+<?php namespace Adbiro\Biroa\Commanding;
 /**
  * Created by PhpStorm.
  * User: biroa

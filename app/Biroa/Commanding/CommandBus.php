@@ -1,4 +1,4 @@
-<?php namespace Biroa\Commanding;
+<?php namespace Adbiro\Biroa\Commanding;
 /**
  * Created by PhpStorm.
  * User: biroa
@@ -6,6 +6,7 @@
  * Time: 4:54 PM
  */
 
+use Illuminate\Foundation\Application;
 
 class CommandBus
 {
