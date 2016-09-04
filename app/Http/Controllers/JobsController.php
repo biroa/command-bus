@@ -1,4 +1,9 @@
 <?php namespace Adbiro\Http\Controllers;
+use Adbiro\Biroa\Commanding\CommandBus;
+use Adbiro\Biroa\Jobs\PostJobListingCommand;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
+
 /**
  * Created by PhpStorm.
  * User: biroa
@@ -6,10 +11,6 @@
  * Time: 4:33 PM
  */
 
-use Adbiro\Biroa\Commanding\CommandBus;
-use Adbiro\Biroa\Jobs\PostJobListingCommand;
-use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Http\Request;
 
 class JobsController extends BaseController
 {
