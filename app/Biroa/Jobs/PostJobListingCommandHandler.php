@@ -1,5 +1,8 @@
 <?php namespace Adbiro\Biroa\Jobs;
 use Adbiro\Biroa\Commanding\CommandHandler;
+use Biroa\Jobs\Job;
+use Symfony\Component\EventDispatcher\EventDispatcher;
+
 /**
  * Created by PhpStorm.
  * User: biroa
@@ -9,11 +12,27 @@ use Adbiro\Biroa\Commanding\CommandHandler;
 
 class PostJobListingCommandHandler implements CommandHandler
 {
+	protected $job;
+
+	private $dispatcher;
+	
+	public function __construct(Job $job, EventDispatcher $dispatcher)
+	{
+		$this->job = $job;
+		$this->dispatcher = $dispatcher;
+	}
+	
+	
 	/**
 	 * @param $command
 	 */
 	public function handle($command)
 	{
-		var_dump('delegate process of posting a job listing');
+		$job = $this->job->post(
+			$command->title,
+			$command->description
+		);
+		
+		$this->dispatcher->dispatch($job->releaseEvents());
 	}
 }
