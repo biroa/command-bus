@@ -1,4 +1,4 @@
-<?php namespace Biroa\Commanding;
+<?php namespace Adbiro\Biroa\Jobs;
 /**
  * Created by PhpStorm.
  * User: biroa
@@ -6,7 +6,7 @@
  * Time: 5:16 PM
  */
 
-use Biroa\Commanding\CommandHandler;
+use Adbiro\Biroa\Commanding\CommandHandler;
 
 class PostJobListingCommandHandler implements CommandHandler
 {

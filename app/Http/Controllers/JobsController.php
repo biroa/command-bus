@@ -6,10 +6,10 @@
  * Time: 4:33 PM
  */
 
-use Biroa\Commanding\CommandBus;
-use Biroa\Jobs\PostJobListingCommand;
+use Adbiro\Biroa\Commanding\CommandBus;
+use Adbiro\Biroa\Jobs\PostJobListingCommand;
 use Illuminate\Routing\Controller as BaseController;
-
+use Illuminate\Http\Request;
 
 class JobsController extends BaseController
 {
@@ -25,7 +25,7 @@ class JobsController extends BaseController
 	 *
 	 * @return Response
 	 */
-	public function store(){
+	public function store(Request $request){
 		
 		
 		
