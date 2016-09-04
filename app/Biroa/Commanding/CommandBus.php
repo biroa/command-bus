@@ -1,6 +1,4 @@
-<?php namespace Adbiro\Biroa\Commanding;
-use Illuminate\Foundation\Application;
-
+<?php namespace Biroa\Commanding;
 /**
  * Created by PhpStorm.
  * User: biroa
@@ -8,6 +6,7 @@ use Illuminate\Foundation\Application;
  * Time: 4:54 PM
  */
 
+use Illuminate\Foundation\Application;
 
 
 class CommandBus
