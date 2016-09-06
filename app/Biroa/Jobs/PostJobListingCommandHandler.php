@@ -24,7 +24,7 @@ class PostJobListingCommandHandler implements CommandHandler
 	
 	
 	/**
-	 * @param $command
+	 * @param $command - the whole dataset
 	 */
 	public function handle($command)
 	{
